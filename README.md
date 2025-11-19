@@ -1,6 +1,3 @@
-# Calculadora-De-IMC
-Utiliando o localStorage para amarzenar os dados
-
 # 🧮 Calculadora de IMC
 
 Uma calculadora simples e prática para determinar o **IMC (Índice de Massa Corporal)** com base no peso e altura informados. O projeto exibe o valor calculado e a classificação correspondente segundo a tabela da OMS.
@@ -12,9 +9,6 @@ Uma calculadora simples e prática para determinar o **IMC (Índice de Massa Cor
 - Validação de campos
 - Interface rápida e intuitiva
 - Layout responsivo (se aplicável)
-
-## 📊 Fórmula utilizada
-
 
 ## 🧠 Objetivo do Projeto
 Treinar e demonstrar habilidades como:
@@ -28,7 +22,6 @@ Treinar e demonstrar habilidades como:
 - **CSS3**
 - **JavaScript**
 
-## 📁 Estrutura do projeto
 
 ## 📌 Como usar
 1. Abra o arquivo `index.html` no navegador.
