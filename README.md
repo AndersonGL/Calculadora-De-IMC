@@ -22,7 +22,6 @@ Treinar e demonstrar habilidades como:
 - **CSS3**
 - **JavaScript**
 
-## 📁 Estrutura do projeto
 
 ## 📌 Como usar
 1. Abra o arquivo `index.html` no navegador.
