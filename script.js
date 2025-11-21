@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nomeInput = document.getElementById("nome");
   const nomeError = document.getElementById("nome-error");
 
+  // manipular o formulário de cálculo do IMC
   formulario.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -14,15 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
       nomeError.style.display = "none";
     }
 
+     // obter valores do formulário
     const nome = nomeInput.value;
     const altura = parseFloat(document.getElementById("altura").value);
     const peso = parseFloat(document.getElementById("peso").value);
 
+    // calcular IMC
     const imc = peso / (altura * altura);
     const resultadoElement = document.getElementById("resultado");
 
     let categoria;
 
+    // determinar categoria do IMC e aplicar cores
     if (imc < 18.5) {
       categoria = "Abaixo do peso";
       resultadoElement.style.backgroundColor = "#FFFF00";
@@ -36,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       categoria = "Obesidade";
       resultadoElement.style.backgroundColor = "#FF0000";
     }
-
+     // exibir resultado
     resultadoElement.innerHTML = `<p> ${nome}, seu IMC é ${imc.toFixed(
       2
     )}.</p><p>Você está na categoria: ${categoria}</p>`;
@@ -45,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("categoria").value = categoria;
 
     let dados = new FormData(formulario);
-
+    
+  
     for (let [chave, valor] of dados.entries())
       console.log(chave + " : " + valor);
   });
