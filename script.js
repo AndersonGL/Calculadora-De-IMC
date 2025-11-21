@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Atualizar a categoria - input
     document.getElementById("categoria").value = categoria;
 
-    // Armazenando os daos no LocalStorage
+    // Armazenando os dados no LocalStorage
 
     let dados = new FormData(formulario);
     
